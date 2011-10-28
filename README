@@ -1,0 +1,8 @@
+Resultmanager program assists the teachers to fetch and analyse the results
+of any batch of students under Calicut University, India. The program is written in Python. It does the
+following:
+– Fetch the result pages of a specified batch of students.
+– Calculate the individual total marks and percentage.
+– Find out the class topper.
+– Calcutate the class-wise & subject-wise pass percentage.
+
