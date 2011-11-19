@@ -125,11 +125,11 @@ for i in range(1, students + 1):
         print roll, ' ', individual_total[i], ' - ', '%.2f' %(float(individual_total[i])/total*100)
         
         temp = float(individual_total[i])/total * 100
-        if temp > 80:
+        if temp >= 80:
             perc_above_80 += 1
-        if temp > 75:
+        if temp >= 75:
             perc_above_75 += 1
-        if temp > 60 and temp < 75:
+        if temp >= 60 and temp < 75:
             perc_60_to_75 += 1
         if temp < 60:
             perc_below_60 += 1
