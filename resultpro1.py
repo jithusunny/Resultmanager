@@ -23,7 +23,7 @@ def failed(string):
  
 def subject_string_match(string):
     '''Returns the first subject string in the input string.'''
-    substr = re.search(r'([a-zA-Z-&] *)+([0-9-] *)+ [PF]', string)
+    substr = re.search(r'([a-zA-Z-&/] *)+([0-9-] *)+ [PF]', string)
     return substr
 
 def stripA(string):
@@ -39,7 +39,7 @@ def filter_subjects(string):
     while string:
         string = string.strip()
         substring = subject_string_match(string).group()
-        sub = re.search(r'([a-zA-Z-&] *)+', substring).group().strip()
+        sub = re.search(r'([a-zA-Z-&/] *)+', substring).group().strip()
         sub = stripA(sub)
         sub_dict[sub] = 0
         string = string[len(substring):]
